@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo 4.jpg" type="image/x-icon">
+    <title>Giới Thiệu</title>
+    <style>
+        section {
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: left;
+        }
+        section a {
+            text-decoration: none;
+        }
+        .overview-container {
+            display:flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .overview-image img {
+         width: 100%;
+         max-width: 400px;
+         height: auto;
+        }
+        .overview-content {
+         padding-left: 30px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+        }
+        .overview-content h2 {
+         text-decoration: none;
+         margin-top: 0;
+         color: #333;
+        }
+        .overview-content p {
+         margin-top: 0;
+         font-size: 16px;
+         line-height: 1.6;
+         color: #444;
+        }
+        @media (max-width: 768px) {
+            .overview-container {
+              flex-direction: column;
+              align-items: center;
+            }
+            .overview-content {
+              padding-left: 0;
+              margin-top: 20px;
+              text-align: center;
+            }
+        }
+        .overview-container:hover {
+            transform: scale(0.98);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <link rel="stylesheet" href="../css/hiệu ứng.css">
+</head>
+<body>
+    <div class="top-header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo 4.jpg" alt="Logo">
+            </a>   
+            <a href="../index.html">
+                <span>Airsoft</span>
+            </a>
+        </div>
+        <div class="hotline">
+            <i class="fas fa-headset"></i>&#128222;<!--Cái điện thoại--> HOTLINE: <span class="red">0763627348</span>
+        </div>
+        <div class="store">
+            <i class="fas fa-map-marker-alt"></i> HỆ THỐNG CỬA HÀNG
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm sản phẩm...">&#128269;<!-- Kính lúp tìm kiếm -->
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-icons">
+            <div><i class="fas fa-user"></i><!-- Hình người đăng nhập--><div id="usersSection"><a href="../html/đăng nhập.html">&#128100;Đăng nhập</a></div></div>
+            <div><i class="fas fa-shopping-cart"></i>&#128722;<!--Biểu tượng giỏ hàng--> <a href="#">Giỏ hàng</a><span class="cart-count">0</span></div>
+        </div>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><div class="dropdown">
+                <a href="#">Sản phẩm ▾</a>
+                <div class="dropdown-content">
+                  <a href="../danh mục từng loại súng/Súng ngắn.html">HANDGUN: Súng Ngắn</a>
+                  <a href="../danh mục từng loại súng/súng trường.html">Rifle: Súng trường</a>
+                  <a href="../danh mục từng loại súng/súng tiểu liên.html">SMG: Súng tiểu liên</a>
+                  <a href="../danh mục từng loại súng/súng ngắm.html">SNIPER: Súng Bắn Tia</a>
+            </li>
+            <li><a href="Dịch Vụ.html">Dịch Vụ</a></li>
+            <li><a href="Giới thiệu.html">Giới thiệu về Airsoft</a></li>
+            <li><a href="Liên Hệ.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <section>
+        <a href="../Trang giới thiệu/Airsoft là gì.html">
+            <div class="overview-container">
+                <div class="overview-image">
+                    <img src="../images/1.jpg" alt="Người chơi Airsoft">
+                  </div>
+                  <div class="overview-content">
+                    <h2>TỔNG QUAN VỀ AIRSOFT</h2>
+                    <p>
+                      Mình là một người đam mê airsoft và rất muốn được chia sẻ với những anh em có niềm đam mê giống như mình về những kinh nghiệm mà mình đã từng trải qua trong suốt nhiều năm chơi môn thể thao này. Mình sẽ cung cấp cho các bạn...
+                    </p>    
+                </div>
+            </div>
+        </a>
+        <a href="../Trang giới thiệu/airsoft có nguy hiểm không.html">
+            <div class="overview-container">
+                <div class="overview-image">
+                    <img src="../images/airsoft có nguy hiểm không.jpg" alt="Người chơi Airsoft">
+                  </div>
+                  <div class="overview-content">
+                    <h2>Airsoft có nguy hiểm không?</h2>
+                    <p>
+                        Mình biết chắc chắn rằng khi các bạn bắt đầu tìm hiểu và bắt đầu thích bộ môn Airsoft này thì cũng sẽ đều băn khoăn với câu hỏi ở trên. Có 1 điều đầu tiên và quan trọng nhất về an toàn trong môn chơi này mà các bạn cần phải luôn ghi nhớ, đó là ...
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="../Trang giới thiệu/luật chơi.html">
+            <div class="overview-container">
+                <div class="overview-image">
+                    <img src="../images/2.jpg" alt="Người chơi Airsoft">
+                  </div>
+                  <div class="overview-content">
+                    <h2>Luật Chơi trong Airsoft</h2>
+                    <p>
+                        Khi bạn tham gia 1 trận off game airsoft, bạn sẽ được BTC phổ biến luật chơi. Có những nguyên tắc chung mà hầu hết các cộng đồng Airsoft trên thế giới đều follow theo ...
+                    </p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <footer>
+        &copy; 2025 Trang Chủ. Bảo lưu mọi quyền.<br>
+        ĐC : Số 8, Đường Trần Văn Ơn, Phường Phú Hòa, Thành Phố Thủ Dầu Một<br>
+        Email : lyhoanghung206@gmail.com
+    </footer>
+    <script>
+        window.onload = function() {
+          const isLoggedIn = localStorage.getItem("isLoggedIn");
+          const currentUser = localStorage.getItem("currentUser");
+      
+            if (isLoggedIn === "true" && currentUser) {
+                const userSection = document.getElementById("usersSection");
+                userSection.innerHTML = `
+                    <div style="display: flex;">
+                        <span>👋 Xin chào, <strong>${currentUser}</strong>
+                            <a onclick="logout()" href="../index.html">Đăng xuất</a>
+                        </span>
+                    </div>
+                `;
+            }
+        };
+        function logout() {
+            localStorage.removeItem("isLoggedIn");
+            localStorage.removeItem("currentUser");
+            window.location.reload(); // hoặc chuyển hướng nếu muốn
+        }
+    </script>
+</body>
+</html>

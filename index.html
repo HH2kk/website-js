@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang chủ của trò chơi Airsoft với hơn 500 sản phẩm chất lượng cao dành cho người chơi đam mê.">
+    <link rel="icon" href="images/logo 4.jpg" type="image/x-icon">
+    <title>Trò Chơi Airsoft</title>
+    <style>
+        section {
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: left;
+        }
+        section a {
+            text-decoration: none;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            gap: 5px;
+        }
+        .product {
+            width: 22%;
+            border: 1px solid #ddd;
+            background : white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product img {
+            width: 100%;
+            margin-top: -10px;
+            margin-bottom: -93px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 0;
+            padding: 5px 70px;
+            background: white;
+            color: rgb(0, 0, 0);
+            border-radius: 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+            gap: 0;
+        }
+        .buy-btn p {
+            text-align: center;
+        }
+        /* Thuộc tính Best seller */
+        .Bestseller-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            gap: 5px;
+        }
+        .Bestseller {
+            width: 22%;
+            border: 1px solid #ddd;
+            background : white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .Bestseller img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .Bestseller h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .Bestseller:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+        .bestseller-btn {
+            margin-top: 0;
+            padding: 5px 70px;
+            background: white;
+            color: rgb(0, 0, 0);
+            border-radius: 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+            gap: 0;
+        }
+        .bestseller-btn p {
+            text-align: center;
+        }
+        .banner {
+            height: 350px;
+            padding: 20px 0;
+            margin-right: 1px;  
+        }
+        .banner img{
+            width: 100%;
+            height: 350px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/hiệu ứng.css">
+</head>
+<body>
+    <div class="top-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo 4.jpg" alt="Logo">
+            </a> 
+            <a href="index.html">
+                <span>Airsoft</span>
+            </a>
+        </div>
+        <div class="hotline">
+            <i class="fas fa-headset"></i>&#128222;<!-- Cái điện thoại -->HOTLINE: <span class="red">0763627348</span>
+        </div>
+        <div class="store"> 
+            <i class="fas fa-map-marker-alt"></i> HỆ THỐNG CỬA HÀNG 
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm sản phẩm...">&#128269;<!-- Kính lúp tìm kiếm -->
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-icons">
+            <div><i class="fas fa-user"></i><!-- Hình người đăng nhập--><div id="usersSection"><a href="html/đăng nhập.html">&#128100;Đăng nhập</a></div></div>
+            <div><i class="fas fa-shopping-cart"></i>&#128722;<!--Biểu tượng giỏ hàng--> <a href="#">Giỏ hàng</a><span class="cart-count">0</span></div>
+        </div>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><div class="dropdown">
+                <a href="#">Sản phẩm ▾</a>
+                <div class="dropdown-content">
+                  <a href="danh mục từng loại súng/Súng ngắn.html">HANDGUN: Súng Ngắn</a>
+                  <a href="danh mục từng loại súng/súng trường.html">Rifle: Súng trường</a>
+                  <a href="danh mục từng loại súng/súng tiểu liên.html">SMG: Súng tiểu liên</a>
+                  <a href="danh mục từng loại súng/súng ngắm.html">SNIPER: Súng Bắn Tia</a>
+                </div>
+            </li>
+            <li><a href="html/Dịch Vụ.html">Dịch Vụ</a></li>
+            <li><a href="html/Giới thiệu.html">Giới thiệu về Airsoft</a></li>
+            <li><a href="html/Liên Hệ.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <img src="images/Silde-2-3.jpg" alt="logo"> 
+    </div>
+    <section>
+        <!-- các sản phẩm của cửa hàng -->
+        <h2>Tất cả các sản phẩm</h2>
+        <div class="product-container">
+            <a href="danh mục từng loại súng/Súng ngắn.html">
+                <div class="product">
+                    <img src="images/hand-gun.jpg" alt="hand Gun">
+                    <a href="#" class="buy-btn">
+                        <b><p>Hand Gun <br> Súng ngắn</p></b>
+                    </a>
+                </div>
+            </a>
+            <a href="danh mục từng loại súng/súng trường.html">
+                <div class="product">
+                    <img src="images/Rifle.jpg" alt="Rifle">
+                    <a href="#" class="buy-btn">
+                        <b><p>Rifle<br>Súng trường</p></b>
+                    </a>
+                </div>
+            </a>
+            <a href="danh mục từng loại súng/súng tiểu liên.html">
+                <div class="product">
+                    <img src="images/SMG.jpg" alt="SMG">
+                    <a href="#" class="buy-btn">
+                        <b><p>SMG<br>Súng tiểu liên</p></b>
+                    </a>
+                </div>
+            </a>
+            <a href="danh mục từng loại súng/súng ngắm.html">
+                <div class="product">
+                    <img src="images/Sniper.jpg" alt="Sniper">
+                    <a href="#" class="buy-btn">
+                        <b><p>Sniper<br>Súng ngắm</p></b>
+                    </a>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section>
+        <!-- các sản phẩm của cửa hàng -->
+        <h2>Best Seller</h2>
+        <div class="Bestseller-container">
+            <a href="thuộc tính súng html/ARMY R18 GLOCK 18.html">
+                <div class="Bestseller">
+                    <img src="images/ARMY R18 GLOCK 18 7tr.jpg" alt="hand Gun">
+                    <a href="#" class="bestseller-btn">
+                        <b><p>ARMY R18 GLOCK 18</p></b>
+                    </a>
+                </div>
+            </a>
+            <a href="thuộc tính súng html/GHK M4 GBBR.html">
+                <div class="Bestseller">
+                    <img src="images/GHK M4 GBBR 25tr.jpg" alt="hand Gun">
+                    <a href="#" class="bestseller-btn">
+                        <b><p>GHK M4 GBBR</p></b>
+                    </a>
+                </div>
+            </a>
+            <a href="thuộc tính súng html/SVD DRAGUNOV AEG.html">
+                <div class="Bestseller">
+                    <img src="images/A&K SVD DRAGUNOV AEG 18tr5.jpg" alt="hand Gun">
+                    <a href="#" class="bestseller-btn">
+                        <b><p>SVD DRAGUNOV AEG</p></b>
+                    </a>
+                </div>
+            </a>
+            <a href="thuộc tính súng html/KSC TP9 SMG GBBR.html">
+                <div class="Bestseller">
+                    <img src="images/KSC TP9 SMG GBBR 21tr5.jpg" alt="hand Gun">
+                    <a href="#" class="bestseller-btn">
+                        <b><p>KSC TP9 SMG GBBR</p></b>
+                    </a>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Trò Chơi Airsoft. Bảo lưu mọi quyền.<br>
+        Địa chỉ: Số 8, Đường Trần Văn Ơn, Phường Phú Hòa, Thành Phố Thủ Dầu Một<br>
+        Email: lyhoanghung206@gmail.com
+    </footer>
+    <script>
+        window.onload = function() {
+          const isLoggedIn = localStorage.getItem("isLoggedIn");
+          const currentUser = localStorage.getItem("currentUser");
+      
+            if (isLoggedIn === "true" && currentUser) {
+                const userSection = document.getElementById("usersSection");
+                userSection.innerHTML = `
+                    <div style="display: flex;">
+                        <span>👋 Xin chào, <strong>${currentUser}</strong>
+                            <a onclick="logout()" href="index.html">Đăng xuất</a>
+                        </span>
+                    </div>
+                `;
+            }
+        };
+        function logout() {
+            localStorage.removeItem("isLoggedIn");
+            localStorage.removeItem("currentUser");
+            window.location.reload(); // hoặc chuyển hướng nếu muốn
+        }
+    </script>      
+</body>
+</html>

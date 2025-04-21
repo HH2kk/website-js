@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo 4.jpg" type="image/x-icon">
+    <title>Đăng ký</title>
+    <style>
+        .modal {
+            position: fixed;
+            z-index: 1;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .switch-link {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+      <!-- Đăng ký -->
+      <div id="registerModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Đăng ký</h2>
+          <input type="text" id="reg-username" placeholder="Tên đăng nhập mới">
+          <input type="password" id="reg-password" placeholder="Mật khẩu mới">
+          <input type="password" id="reg-enterpassword" placeholder="Nhập lại mật khẩu">
+          <button onclick="register()">Đăng ký</button>
+          <p>Đã có tài khoản? <span class="switch-link" onclick="showLogin()"><a href="đăng nhập.html">Đăng nhập</a></span></p>
+        </div>
+    </div>
+    <script>
+        const loginModal = document.getElementById("loginModal");
+        const registerModal = document.getElementById("registerModal");
+        const loginBtn = document.getElementById("loginBtn");
+    
+        loginBtn.onclick = () => loginModal.style.display = "block";
+    
+        function closeModal() {
+            loginModal.style.display = "none";
+            registerModal.style.display = "none";
+        }
+    
+        function showRegister() {
+            loginModal.style.display = "none";
+            registerModal.style.display = "block";
+        }
+    
+        function showLogin() {
+            registerModal.style.display = "none";
+            loginModal.style.display = "block";
+        }
+    
+        function register() {
+            const newUser = document.getElementById("reg-username").value;
+            const newPass = document.getElementById("reg-password").value;
+            const renewPass = document.getElementById("reg-enterpassword").value;
+        
+            if (!newUser || !newPass) {
+                alert("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+        
+            localStorage.setItem("username", newUser);
+            localStorage.setItem("password", newPass);
+            localStorage.setItem("enterpassword", renewPass);
+            alert("Đăng ký thành công!");
+            // Tự động chuyển sang đăng nhập với thông tin vừa tạo
+            document.getElementById("login-username").value = newUser;
+            document.getElementById("login-password").value = newPass;
+            showLogin();
+            showLogin();
+        }
+        function login() {
+            const inputUser = document.getElementById("login-username").value;
+            const inputPass = document.getElementById("login-password").value;
+        
+            const storedUser = localStorage.getItem("username");
+            const storedPass = localStorage.getItem("password");
+        
+            if (inputUser === storedUser && inputPass === storedPass) {
+                alert("Đăng nhập thành công!");
+                localStorage.setItem("isLoggedIn", "true");
+                window.location.href = "../index.html"; // ← Quay về trang chính
+            } else {
+                alert("Sai tên đăng nhập hoặc mật khẩu!");
+            }
+        }
+    
+        // Tắt modal khi click ngoài vùng
+        window.onclick = function(event) {
+            if (event.target === loginModal || event.target === registerModal)
+                closeModal();
+        }
+        // Tự động hiện form đăng nhập khi vào trang
+        // window.onload = function () {
+        //     loginModal.style.display = "block";
+        // };
+    </script>
+</body>
+</html>

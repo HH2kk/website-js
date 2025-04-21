@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo 4.jpg" type="image/x-icon">
+    <title>Giỏ hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e1f5fe, #ffffff);
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 30px;
+            text-align: left;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00796b;
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .cart-table th, .cart-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .cart-table th {
+            background: #00bcd4;
+            color: white;
+        }
+        .cart-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .quantity-controls button {
+            background-color: #00bcd4;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .quantity-controls button:hover {
+            background-color: #0097a7;
+        }
+        .total {
+            text-align: right;
+            font-size: 18px;
+            color: #d32f2f;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e0f2f1;
+            color: #004d40;
+            font-size: 14px;
+            margin-top: 50px;
+            border-top: 2px solid #00796b;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/hiệu ứng.css">
+</head>
+<body>
+    <div class="top-header">
+        <div class="logo">  
+            <a href="../index.html">
+                <img src="../images/logo 4.jpg" alt="Logo">
+            </a>  
+            <a href="../index.html">
+                <span>Airsoft</span>
+            </a>
+        </div>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="Danh sách sản phẩm.html">Sản phẩm</a></li>
+            <li><a href="Dịch Vụ.html">Dịch Vụ</a></li>
+            <li><a href="Giới thiệu.html">Giới thiệu về Airsoft</a></li>
+            <li><a href="Liên Hệ.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Giỏ hàng của bạn 🛒</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <!-- Dữ liệu sản phẩm sẽ được hiển thị ở đây -->
+            </tbody>
+        </table>
+        <div class="total">Tổng: <span id="total-price">0₫</span></div>
+    </section>
+
+    <footer>
+        &copy; 2025 Trò Chơi Airsoft. Bảo lưu mọi quyền.<br>
+        Địa chỉ: Số 8, Đường Trần Văn Ơn, Phường Phú Hòa, Thành Phố Thủ Dầu Một<br>
+        Email: lyhoanghung206@gmail.com
+    </footer>
+    <script src="../Javascript/điều chỉnh sản phẩm.js"></script>
+</body>
+</html>
